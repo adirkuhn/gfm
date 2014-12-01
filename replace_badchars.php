@@ -1,6 +1,4 @@
 <?php
-ini_set('display_errors', 1);
-
 function pega_arquivo_replace_callback(array $matches) {
 
     $badChars = array(
@@ -22,10 +20,4 @@ function pega_arquivo_xml($arquivo) {
 
     return $xml_corrigido;
 }
-
-
-
-
-echo "<pre>";
-echo pega_arquivo_xml("(update)FLEURY_doenças_sem45.xml");
-echo "</pre>";
+?>
